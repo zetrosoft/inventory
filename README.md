@@ -1,7 +1,10 @@
 # inventory
 Shop inventory and point of sales
+
 Web Application
+
 Feature
+
 1. Point of Sales
    1. Multi Customer Type
    2. Receipt Printer Support (small print/ large print) slip
