@@ -1,0 +1,11 @@
+Sebelum menjalankan applikasi ini silahkan execute query mysql dari file 
+../asset/db/db_kosong.sql
+
+kemudian edit file .../asset/bin/zetro_config.dll (buka dengan notepad atau ++notepad)
+ganti pada section [Server] sesuaikan dengan kondisi server anda
+
+kemudian jalankan applikasi
+pertama akan diminta membuat user Superuser dan passwordnya
+
+Note :
+Applikasi ini normal jika menggunakan browse Firefox 10 keatas

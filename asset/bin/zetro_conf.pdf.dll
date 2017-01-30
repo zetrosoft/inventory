@@ -1,0 +1,12 @@
+;konfigurasi laporan PDF
+	;P=potrait
+	;L=landscape
+
+[Laporan SHU]
+Ukuran|A4
+Posisi|P
+
+[Neraca]
+Ukuran|A4
+Posisi|P
+

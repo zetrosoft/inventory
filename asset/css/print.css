@@ -1,0 +1,13 @@
+/* CSS Document */
+
+  #atas, #kanan, #bawah
+  {display:none;}
+
+  #wrapper{
+  float: left;
+  width: 100%;
+  }
+  
+  #isi{
+  width: 100%;
+  }

@@ -1,0 +1,34 @@
+[Server]
+hostname|localhost
+username|root
+password|
+dbname|posdb
+
+[WebPage]
+Title|Watermelon v.2.0
+subtitle| Mini Market
+
+[Path]
+z_menu|asset/bin/zetro_menu.dll
+z_config|asset/bin/zetro_config.dll
+z_table|asset/bin/zetro_table.cfg
+z_form|asset/bin/form.cfg
+localhost|http://localhost/kbr
+
+[InfoCo]
+Name|Mini Market
+subtitle| -
+Address|
+Kota|Sumedang
+Propinsi| Jawa Barat
+Telp|Telp :
+Fax |Fax : 
+BH|
+NPWP|NPWP  :
+NPPKP|NPPKP:
+
+
+[SHU Kode]
+1|35|SHU Tahun Lalu
+2|36|SHU Tahun Berjalan
+

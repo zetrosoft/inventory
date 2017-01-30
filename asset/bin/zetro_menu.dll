@@ -1,0 +1,384 @@
+[Menu Utama]
+1|Kasir||y|kasir.png|Kasir
+2|Inventory||y|inventory.png|Inventory
+3|Laporan||y|laporan.png|Laporan
+4|Absensi||y|absensi.png|Absensi
+5|Setup||y|setup.png|Setup
+
+
+[Setup]
+1|Home|admin/index||
+2|User Admin||y|
+3|Master Data||y|
+4|Help|||
+	
+	[User Admin]
+	1|User Account|controlpanel/userlist||
+	2|Preference|settingan/pengaturan||
+	3|<hr>|x||
+	4|Activation|admin/validasi|y|
+	
+	[Master Data]
+	1|Lokasi Gudang|settingan/lokasi_gudang|||
+	2|<hr>|x||
+	3|Kategori Barang|gudang/kategori||
+	4|Jenis Barang|gudang/jenis||
+	5|<hr>|x||
+	6|Satuan Barang|gudang/satuan||
+	7|Konversi Satuan|gudang/konversi||
+	8|<hr>|x||
+	9|Data Akun|master/general|||
+	;10|Set Harga|master/setharga|||
+    ;10|Pangkalan|master/pangkalan|||
+	
+	[Preference]
+	1|Profile|profile|y|zecv|
+	
+	[Set Harga]
+	1|Setting Harga|settingharga|y|zcev
+	
+	[Lokasi Gudang]
+	1|Lokasi Gudang|lokasigudang|y|zcev|
+	
+		[Data Akun]
+		;1|Departement|data_dept|y|zcev
+		;2|Klasifikasi|data_class|y|zcev
+		;3|Sub Klasifikasi|data_sub_class|y|zcev
+		1|Data Akun|dataakun|y|zcev
+        
+        [Pangkalan]
+        1|Data Pangkalan|datapangkalan|y|zcev
+
+[Kasir]
+1|Home|admin/index||
+2|Transaksi||y|
+3|Inventori||y|
+4|Pelanggan||y|
+5|Help|||
+
+	[File]
+	2|<hr>|x||
+
+	
+	[Transaksi]
+	1|Penjualan|penjualan/index|y|zce
+	2|Return Penjualan|penjualan/return_jual||zce
+	3|<hr>|x||
+	;4|Service|penjualan/service||
+	;5|<hr>|x||
+	4|Kas Harian Toko|master/kas_harian||
+	;7|<hr>|x||
+	;8|Print Faktur Penjualan|laporan/faktur||zp
+	5|<hr>|x||
+	6|List Transaksi Penjualan|penjualan/list_trans||
+    ;7|List Transaksi LPG|laporan/elpiji||
+	
+    [Penjualan]
+    1|Penjualan Umum|penjualan/index|y|zce
+   ; 2|Penjualan Gas|penjualan/index|y|zce
+    
+		[Kas Harian Toko]
+		1|Setup Saldo Kas|kas_harian|y|zce
+		2|Operasional Toko|kas_keluar|y|zce
+		
+		[Print Faktur]
+		1|Print Faktur Penjualan|faktur|y|zp
+		
+		[Return Penjualan]
+		;1|Return Jual|return_jual|y|zce
+		
+		[List Transaksi Penjualan]
+		1|List Transaksi Penjualan|listtransaksipenjualan|y|zevp|
+        
+        [List Transaksi LPG]
+        1|List Transaksi LPG|listtransaksilpg|y|zevp|
+        
+		
+	[Service]
+	1|List Service|listservice|y|zcevp
+	
+	
+	[Inventori]
+	1|List Stock|stock/stock_barang||
+	2|List Barang Terjual|report/penjualan||
+		
+		[List Barang Terjual]
+		1|List Barang Terjual|listbarangterjual|y|zvp
+		
+	[Help]
+	1|Ganti Password|controlpanel/change_password||
+	2|<hr>|x||
+	3|Info|admin/about|
+	4|Log Out|admin/logout||
+
+		[Ganti Password]
+		1|Change Password|changepassword|y|
+	
+	;2|TO DO|admin/todo|
+	
+;Keanggotaan ======================================================
+	[Pelanggan]
+	1|Pelanggan Baru|member/index||
+	2|Daftar Pelanggan|member/member_list|y|cevp
+	3|<hr>|x|
+	4|Pembayaran Tagihan|simpanan/t_pinjaman||
+	5|Tagihan Pelanggan|report/tagihan||
+	6|<hr>|x|
+    7|Titip Barang|member/titipbarang||
+    
+		[Pelanggan Baru]
+		1|Pelanggan Baru|pelangganbaru|y|zce
+		;2|Upload Photo|auploadphoto|y|zce
+			
+			[Member Detail]
+			1|Data Pelanggan|memberdata|y|
+			;2|Member Trans|membertrans|y|
+			
+	[Pembayaran Tagihan]
+	1|Pembayaran Tagihan|pembayarantagihan|y|zce
+	
+	[Tagihan Pelanggan]
+	1|List Tagihan|listtagihan|y|zvp
+	
+    [Titip Barang]
+    1|Titip Barang|titipbarang|y|zvp
+    
+
+;menu inventory====================================================
+	
+[Inventory]
+1|Home|admin/index||
+2|Penerimaan||y||
+3|Gudang||y||
+5|Vendor||y||
+4|Stock||y||
+6|Help||||
+
+	[Master]
+	
+	[Penerimaan]
+	1|Penerimaan Vendor|pembelian/index||
+	2|<hr>|x|
+	3|Penerimaan Mutasi|gudang/terima_mutasi||
+	4|<hr>|x|
+    5|Rencana Belanja|pembelian/belanja||
+    
+		[Stock Adjustment]
+		1|Stock Adjustment|stockadjustment|y|zevp
+			
+		[Penerimaan Vendor]
+		1|Input Pembelian|inputpembelian|y|zcev
+		2|List Penerimaan|listpenerimaan|y|zevp
+		
+		[Return Pembelian]
+		1|Return pembelian|pembelian/return_beli|y|zcev
+		
+		[Penerimaan Mutasi]
+		1|Penerimaan Mutasi|penerimaanmutasi|y|zcev|
+		
+        [Rencana Belanja]
+        1|Rencana Belanja|rencanabelanja|y|zcev|
+        
+	[Vendor]
+	1|Add Vendor|master/vendor_n|y|zce
+	2|List Vendor|master/vendor_l||zevp
+	
+		[List Vendor]
+		1|List Vendor|listvendor|y|zevp
+		
+	
+	[User Account]
+	1|Add User|adduser|y|zce
+	2|List User|listuser|y|zev
+	3|Authorisation|authorisation|y|zcv
+	4|User Area|userarea|y|zcv
+
+	[Gudang]
+	1|Tambah Barang|gudang/index|y|zcev
+	2|Daftar Barang|gudang/list_barang||
+	3|<hr>|x||
+	4|Mutasi Stock|gudang/mutasi||
+	5|<hr>|x||
+	6|Stock Adjustment|stock/stock_barang?zero=y||
+	
+	[Tambah Barang]
+	1|Tambah Barang|tambahbarang|y|zcev
+	;2|Detail Barang|detailbarang|y|zcev
+	
+	[Mutasi Stock]
+	1|Mutasi Stock|mutasistock|y|zcev|
+	2|List Mutasi|lismutasi|y|zevp|
+	;1|Tambah Barang|gudang/index|y|zcev
+	
+	[gudang lama]
+	4|Kategori Barang|gudang/kategori||
+	5|Jenis Barang|gudang/jenis||
+	6|<hr>|x||
+	7|Satuan Barang|gudang/satuan||
+	8|Konversi Satuan|gudang/konversi||
+	;9|<hr>|x||
+	;10|Stock Adjust|gudang/stock_adjust||
+		
+		[Daftar Barang]
+		1|List Barang|listbarang|y|zevp
+		
+		[Kategori Barang]
+		1|Kategori Barang|kategoribarang|y|zcev
+		
+		[Jenis Barang]
+		1|Jenis Barang|jenisbarang|y|zcev
+		
+		[Satuan Barang]
+		1|Satuan Barang|satuanbarang|y|zcev
+		
+		[Konversi Satuan]
+		1|Konversi Satuan|konversisatuan|y|zcev
+		
+		[Stock Adjust]
+		1|Stock Adjustment|stockadjust|y|zcev
+		
+;Laporan===============================================
+		[Print Preview]
+		1|Print Preview|pp|y
+
+[Laporan]
+1|Home|admin/index||
+2|Stock||y||
+3|Lap Penjualan||y||
+4|Lap Pembelian||y||
+5|Lap Kas||y||
+6|Help||||
+;6|Lap.Pelanggan||y||
+
+	
+	[Stock]
+	1|Stock Overview|stock/index|y|zvp
+	2|List Stock|stock/stock_barang||zvp
+	3|<hr>|x|
+	;4|Stock Opname|stock/counting||
+	;5|<hr>|x|
+	4|Laporan Mutasi|report/mutasi||
+	
+		[List Stock]
+		1|List Stock|liststock|y|zevp
+		
+		[Stock Opname]
+		1|Count Sheet|countsheet|y|zvp
+		;2|Stock Adjustment|adjust|y|zce
+		
+		[Sugest Pembelian]
+		1|Stock Limit|stocklimit|y|zvp
+		
+		[Laporan Mutasi]
+		1|List Mutasi Stock|listmutasistock|y|zcvp
+		
+		
+	[Lap Penjualan]
+	1|Rekap Penjualan|report/penjualan||
+	2|Detail Penjualan|report/penjualan_detail||
+	3|Penjualan per Pelanggan|report/penjualan_kon||
+	4|<hr>|x|
+	;5|Top Penjualan|||
+	5|Grafik Penjualan|report/penjualan_graph||
+		
+		[Rekap Penjualan]
+		1|Rekap Penjualan|rekappenjualan|y|zvp
+		
+		[Detail Penjualan]
+		1|Detail Penjualan|detailpenjualan|y|zvp
+		
+		[Penjualan per Pelanggan]
+		1|Penjualan per Pelanggan|penjualanperpelanggan|y|zvp
+		
+		[Top Penjualan]
+		1|Top Barang Terjual|topbarangterjual|y|zvp
+		
+		[Grafik Penjualan]
+		1|Grafik Penjualan|grafikpenjualan|y|zvp
+		
+        
+
+	[Lap Pembelian]
+	1|Rekap Pembelian|report/beli||
+	2|Detail Pembelian|report/beli_detail||
+	3|Pembelian per Vendor|report/beli_vend||
+	4|<hr>|x|
+	5|Sugest Pembelian|stock/stock_limit|||
+	6|Grafik Pembelian|report/beli_graph||
+		
+		[Rekap Pembelian]
+		1|Daftar Pembelian|daftarpembelian|y|zvp
+
+		[Detail Pembelian]
+		1|Detail Pembelian|detailpembelian|y|zvp
+		
+		[Pembelian per Vendor]
+		1|Pembelian per Vendor|pembelianpervendor|y|zvp
+		
+		[Grafik Pembelian]
+		1|Grafik Pembelian|grafikpembelian|y|zvp
+		
+	
+	[Lap Kas]
+	1|Cash Flow|laptransaksi/cash_flow|||
+	2|Laba Rugi|laptransaksi/laba_rugi|||
+	3|<hr>|x||
+	4|Penerimaan Harian|laptransaksi/kas_masuk|||
+	5|Operasional Harian|laptransaksi/ops_harian||
+	6|<hr>|x|
+    7|Margin Penjualan|laptransaksi/margin||
+	8|Grafik Kas|report/kas_graph||
+	;8|Grafik Laba Rugi|||
+	
+		[Cash Flow]
+		1|Aliran Kas|alirankas|y|zvp|
+		
+		[Laba Rugi]
+		1|Laba Rugi|labarugi|y|zvp|
+		
+		[Penerimaan Harian]
+		1|Laporan Kas Masuk|laporankasmasuk|y|zvp
+		
+		[Operasional Harian]
+		1|Operasional Harian|operasionalharian|y|zvp
+		
+		[Grafik Kas]
+		1|Cash Flow|cashflow|y|zvp
+		2|Laba Rugi|labarugi|y|zvp
+        
+        [Margin Penjualan]
+        1|Margin Penjualan|marginpenjualan|y|zvp|
+	
+	[Lap.Pelanggan]
+	1|Rekap Pembelian||||
+	
+	[Absensi]
+	1|Home|admin/index|||
+	2|Karyawan||y||
+	3|Kehadiran||y||
+	4|Lap.Absensi||y||
+	5|Help|||
+	
+		[Karyawan]
+		1|List Karyawan|controlpanel/karyawan|y|zcev
+		2|<hr>|x||
+		3|Kasbon Karyawan|controlpanel/kasbon||
+			
+			[Kasbon Karyawan]
+			1|Kasbon Karyawan|kasbonkaryawan|y|zcev||
+			
+		[Kehadiran]
+		1|Absensi Harian|controlpanel/absensi|y|zcev
+		
+		[Lap.Absensi]
+		1|Rekap Absensi|laporan/rekapabsensi|y|zvp
+		2|Detail Absensi|laporan/detailabsensi||
+		3|<hr>|x||
+		4|Laporan Gaji|controlpanel/gajian|||
+			
+			[Laporan Gaji]
+			1|Rekap Gaji|rekapgaji|y|zevp|
+	
+		[Detail Absensi]
+		1|Detail Absensi|detailabsensi|y|zvp|
+	
